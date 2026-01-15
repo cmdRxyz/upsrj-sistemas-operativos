@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "process.h"
 
+<<<<<<< HEAD
 // Comparador para qsort sobre punteros a Process
 static int cmp_process_ptrs(const void *a, const void *b) {
     const Process *pa = *(const Process **)a;
@@ -12,6 +13,24 @@ static int cmp_process_ptrs(const void *a, const void *b) {
 }
 
 int main() {
+=======
+/* ============================================================
+ * Student implementation area
+ * ============================================================ */
+void fcfs_schedule(Process p[], int n)
+{
+    (void)p;
+    (void)n;
+    /* TODO: Implement FCFS scheduling algorithm here */
+}
+
+/* ============================================================
+ * DO NOT MODIFY MAIN
+ * ============================================================ */
+#ifndef UNIT_TEST
+int main(void)
+{
+>>>>>>> 412d236 (Merge branch 'feature/schedulers' into develop)
     int n;
     printf("Número de procesos: ");
     scanf("%d", &n);
@@ -36,6 +55,15 @@ int main() {
         current_time += proc->burst_time;
     }
 
+<<<<<<< HEAD
     print_results(p, n, "FCFS Scheduling");
     return 0;
 }
+=======
+    fcfs_schedule(p, n);
+
+    print_results(p, n, "FCFS Scheduling");
+    return 0;
+}
+#endif
+>>>>>>> 412d236 (Merge branch 'feature/schedulers' into develop)
