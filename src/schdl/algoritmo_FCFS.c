@@ -1,4 +1,6 @@
-@@ -9,9 +9,28 @@ int main() {
+#include <stdio.h>
+#include "process.h"
+int main() {
     Process p[n];
     read_processes(p, n);
     init_processes(p, n);
