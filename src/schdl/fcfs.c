@@ -29,9 +29,4 @@ void fcfs_schedule(Process p[], int n) {
         proc->completed = 1;
         current_time += proc->burst_time;
     }
-
-    /* reorder p[] so tests that inspect p[0], p[1], ... see FCFS order */
-    Process temp[n];
-    for (int i = 0; i < n; ++i) temp[i] = *order[i];
-    for (int i = 0; i < n; ++i) p[i] = temp[i];
 }
