@@ -29,4 +29,6 @@ void fcfs_schedule(Process p[], int n) {
         proc->completed = 1;
         current_time += proc->burst_time;
     }
+    
+    /* NO DEBE HABER MÁS CÓDIGO DESPUÉS DE ESTO */
 }
