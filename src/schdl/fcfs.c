@@ -2,18 +2,6 @@
 #include <stdlib.h>
 #include "process.h"
 
-<<<<<<< HEAD
-// Comparador para qsort sobre punteros a Process
-static int cmp_process_ptrs(const void *a, const void *b) {
-    const Process *pa = *(const Process **)a;
-    const Process *pb = *(const Process **)b;
-    if (pa->arrival_time != pb->arrival_time)
-        return pa->arrival_time - pb->arrival_time;
-    return pa->id - pb->id;
-}
-
-int main() {
-=======
 /* ============================================================
  * Student implementation area
  * ============================================================ */
@@ -30,7 +18,6 @@ void fcfs_schedule(Process p[], int n)
 #ifndef UNIT_TEST
 int main(void)
 {
->>>>>>> 412d236 (Merge branch 'feature/schedulers' into develop)
     int n;
     printf("Número de procesos: ");
     scanf("%d", &n);
