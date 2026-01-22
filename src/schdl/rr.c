@@ -6,6 +6,10 @@
  * ============================================================ */
 void rr_schedule(Process p[], int n, int quantum)
 {
+    (void)p;
+    (void)n;
+    (void)quantum;
+    /* TODO: Implement RR scheduling algorithm here */
     int time = 0;          // Tiempo actual del sistema
     int completed = 0;     // Número de procesos completados
     int executed;          // Bandera para saber si alguien se ejecutó

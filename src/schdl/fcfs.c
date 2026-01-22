@@ -6,6 +6,9 @@
  * ============================================================ */
 void fcfs_schedule(Process p[], int n)
 {
+    (void)p;
+    (void)n;
+    /* TODO: Implement FCFS scheduling algorithm here */
     int time = 0;
 
     // 1. Ordenar procesos por arrival_time (FCFS real)
@@ -39,7 +42,6 @@ void fcfs_schedule(Process p[], int n)
         p[i].completed = 1;
     }
 }
-
 
 /* ============================================================
  * DO NOT MODIFY MAIN

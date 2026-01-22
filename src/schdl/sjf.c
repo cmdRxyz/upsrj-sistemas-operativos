@@ -6,6 +6,9 @@
  * ============================================================ */
 void sjf_schedule(Process p[], int n)
 {
+    (void)p;
+    (void)n;
+    /* TODO: Implement SJF scheduling algorithm here */
     int time = 0;
     int completed = 0;
 
